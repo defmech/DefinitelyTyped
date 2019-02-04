@@ -7634,6 +7634,14 @@ export class BoxHelper extends LineSegments {
     update(object?: Object3D): void;
 }
 
+export class Box3Helper extends LineSegments {
+    constructor(box?: Box3, color?: Color);
+
+    box: Box3;
+
+    updateMatrixWorld(force?: boolean): void;
+}
+
 export class CameraHelper extends LineSegments {
     constructor(camera: Camera);
 
